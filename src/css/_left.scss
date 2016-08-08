@@ -1,0 +1,120 @@
+.main .wrapper {
+  @include widthHeight(1220px, 100%);
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.mainLeft {
+  height: 100%;
+
+  .mainLeft-btn {
+    background-color: #363a46;
+    color: #deef22;
+    margin: 10px 0 0 -15px;
+    padding: 11px 0;
+    @include fntSizeLtrSpacing(15.5pt, -2.3px);
+    width: 282px;
+    text-transform: uppercase;
+    border: none;
+    font-family: exo_2light,sans-serif;
+    border-radius: 3px;
+    &:hover{
+      background-color: #4c5162;
+      -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.68);
+      -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.68);
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.68);
+      width: 284px;
+    }
+  }
+  .mainLeft-bestClub {
+    background-image: url(../../build/img/best_club-big.png);
+    @include widthHeight(282px, 283px);
+    margin: 28px 0 0 -15px;
+    background-position: -98px 0;
+    .mainLeft-title {
+      text-transform: uppercase;
+      @include fntSizeLtrSpacing(15pt, -0.5px);
+      color: white;
+      margin: 10px 0 0 15px;
+      display: inline-block;
+      font-family: exo_2light,sans-serif;
+      cursor: pointer;
+      .mainLeft-title--yellow {
+        color: #deef22;
+      }
+    }
+    .mainLeft-name {
+      font-family: exo_2bold,sans-serif;
+      margin: 187px 0 0 15px;
+      display: inline-block;
+      color: #deef22;
+      width: 150px;
+      @include fntSizeLtrSpacing(14pt, 0.8px)
+    }
+    .mainLeft-city {
+      color: white;
+      @include fntSizeLtrSpacing(12pt, -1px);
+      margin: 0 0 0 15px;
+    }
+  }
+  .mainLeft-newsTitle {
+    margin: 20px 0 0 -15px;
+    width: 96%;
+    @include fntSizeLtrSpacing(19pt, 2px);
+    font-family: exo_2regular,sans-serif;
+    word-spacing: -1px;
+    .newsTitle-top {
+      word-spacing: 0;
+      @include fntSizeLtrSpacing(19pt, 1px)
+    }
+  }
+  .mainLeftPost-1 {
+    margin: -3px 10px 0 -15px;
+    border-top: 2px solid #d3d6dd;
+    img {
+      margin: -68px 0 0 -7px;
+      display: inline-block;
+    }
+    .mainLeftPost-block {
+      display: inline-block;
+      width: 145px;
+      .mainLeftPost-title {
+        font-family: exo_2bold, sans-serif;
+        @include fntSizeLtrSpacing(13pt, -1px);
+        font-weight: bold;
+        margin: 10px 0 0 4px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .mainLeftPost-members{
+        margin: 3px 0 0 6px;
+        background-color: #d1d4dc;
+        width: 100px;
+        display: inline-block;
+        padding-left: 3px;
+      }
+      .mainLeftPost-city{
+        @include fntSizeLtrSpacing(9pt, 0.5px);
+        margin: 4px 0 0 6px;
+        width: 100px;
+        display: inline-block;
+        color: #8d919a;
+      }
+      .mainLeftPost-data{
+        @include fntSizeLtrSpacing(9pt, 0.5px);
+        margin: 0 0 0 6px;
+        width: 100px;
+        display: inline-block;
+        color: #8d919a;
+      }
+    }
+  }
+  .mainLeftPost-2{
+    margin: 7px 10px 0 -15px;
+    @extend .mainLeftPost-1;
+  }
+  .mainLeftPost-3{
+    margin: 7px 10px 0 -15px;
+    @extend .mainLeftPost-1;
+  }
+}

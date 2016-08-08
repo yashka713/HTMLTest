@@ -1,0 +1,97 @@
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.header {
+  background-color: #363a46;
+  @include widthHeight(100%, 71px);
+  .wrapper {
+    margin: 0 auto;
+    @include widthHeight(1220px, 71px);
+    .logo {
+      background-color: #282b34;
+      float: left;
+      position: relative;
+      @include widthHeight(322px, 71px);
+      img {
+        margin: 23px 10px 10px 15px;
+      }
+      .bigArrow {
+        @include widthHeight(24px, 13px);
+        background-image: url("../../build/img/big_down_arrow.png");
+        display: inline-block;
+        position: absolute;
+        top: 31px;
+        left: 270px;
+        cursor: pointer;
+      }
+    }
+    .icons {
+      @include widthHeight(41.66666667%, 71px);
+      padding-right: 17px;
+      .iconsBell, .iconsLetter, .iconsSmallArrow {
+        @include widthHeight(40px, 40px);
+        background-color: #00aa00;
+        float: right;
+        margin: 16px 8px 10px 8px;
+        border-radius: 3px;
+        cursor: pointer;
+        &:active{
+          background-color: #282b34;
+        }
+      }
+      .iconsBell {
+        background: #484c57 url("../../build/img/bell.png") center no-repeat;
+        position: relative;
+        .iconsBellMessage {
+          position: absolute;
+          @include widthHeight(18px, 18px);
+          left: -3px;
+          top: -5px;
+          background-color: #deef22;
+          border-radius: 50%;
+          text-align: center;
+          font-size: 10pt;
+          font-family: exo_2bold;
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+      .iconsLetter {
+        background: #484c57 url("../../build/img/letter.png") center no-repeat;
+      }
+      .iconsSmallArrow {
+        background: #484c57 url("../../build/img/down_arrow.png") center no-repeat;
+      }
+    }
+    .search {
+      margin: 16px 0 0 4px;
+      text-align: right;
+      padding: 0;
+      font-family: exo_2light;
+      input[type='text'] {
+        background-color: #282b34;
+        color: #e3e6ed;
+        border: none;
+        padding: 3px 14px;
+        font-size: 16pt;
+        letter-spacing: 0;
+        @include widthHeight(386px, 40px);
+      }
+    ;
+      input[type='text']:focus {
+        color: #282b34;
+        background-color: #dadde4;
+        border: none;
+      }
+      input[type='text']:hover {
+        background-color: #1f2229;
+        color: #e3e6ed;
+      }
+    }
+    .search::after {
+      clear: both;
+    }
+  }
+}

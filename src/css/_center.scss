@@ -1,0 +1,70 @@
+.mainCenter {
+  height: 400px;
+  //background-color: yellowgreen;
+  #slideshow {
+    margin: 9px 10px 0 -11px;
+    position: relative;
+    width: 104%;
+    height: 590px;
+    padding: 10px;
+  }
+  #slideshow > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+  .box-news-1 {
+    @extend .box-news-3;
+  }
+  .box-news-2 {
+    @extend .box-news-3;
+  }
+  .box-news-3 {
+    .mainCenter-news {
+      @include fntSizeLtrSpacing(20pt, 1px);
+      margin: 7px 0 4px 5px;
+      font-family: exo_2regular, sans-serif;
+    }
+    .mainCenter-item {
+      border-top: 2px solid #d3d6dd;
+      border-bottom: 2px solid #d3d6dd;
+      a {
+        @include fntSizeLtrSpacing(20pt, 0.65px);
+        margin: 8px 0 0 2px;
+        font-family: exo_2bold, sans-serif;
+        font-weight: bold;
+        color: #545863;
+        display: inline-block;
+      }
+      .mainCenter-sign {
+        .mainCenter-ico {
+          @include widthHeight(15px, 15px);
+          background-image: url("../../build/img/helmet-grey.png");
+          display: inline-block;
+          margin-right: 5px;
+        }
+        color: #8d919a;
+        @include fntSizeLtrSpacing(11pt, 0.65px);
+        margin: 2px 0 0 4px;
+        font-family: exo_2regular, sans-serif;
+        vertical-align: middle;
+      }
+      .mainCenter-img {
+        @include widthHeight(493px, 279px);
+        background-image: url(../../build/img/soldier_news.png);
+        background-position: -32px -11px;
+        margin: 14px 0 0 3px;
+      }
+      .mainCenter-text {
+        @include widthHeight(493px, 155px);
+        @include fntSizeLtrSpacing(12pt, 0px);
+        margin: 10px 0 10px 2px;
+        color: #545863;
+        overflow: hidden;
+      }
+    }
+  }
+}

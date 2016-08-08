@@ -1,5 +1,11 @@
 body{
-  background-color: #00b3ee;
-  oolor: red;
-  font-size: 40px;
+  background-color: #e3e6ed;
+  font-family: exo_2regular, Verdana, Arial, sans-serif;
 }
+@import "fontFace";
+@import "header";
+@import "top";
+@import "left";
+@import "center";
+@import "right";
+@import "footer";

@@ -1,4 +1,464 @@
+@charset "UTF-8";
 body {
-  background-color: #00b3ee;
-  oolor: red;
-  font-size: 40px; }
+  background-color: #e3e6ed;
+  font-family: exo_2regular, Verdana, Arial, sans-serif; }
+
+/*Font*/
+@font-face {
+  font-family: 'exo_2black';
+  src: url("../../build/fonts/exo2-black-webfont.woff2") format("woff2"), url("../../build/fonts/exo2-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'exo_2bold';
+  src: url("../../build/fonts/exo2-bold-webfont.woff2") format("woff2"), url("../../build/fonts/exo2-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'exo_2light';
+  src: url("../../build/fonts/exo2-light-webfont.woff2") format("woff2"), url("../../build/fonts/exo2-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'exo_2regular';
+  src: url("../../build/fonts/exo2-regular-webfont.woff2") format("woff2"), url("../../build/fonts/exo2-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.header {
+  background-color: #363a46;
+  width: 100%;
+  height: 71px; }
+  .header .wrapper {
+    margin: 0 auto;
+    width: 1220px;
+    height: 71px; }
+    .header .wrapper .logo {
+      background-color: #282b34;
+      float: left;
+      position: relative;
+      width: 322px;
+      height: 71px; }
+      .header .wrapper .logo img {
+        margin: 23px 10px 10px 15px; }
+      .header .wrapper .logo .bigArrow {
+        width: 24px;
+        height: 13px;
+        background-image: url("../../build/img/big_down_arrow.png");
+        display: inline-block;
+        position: absolute;
+        top: 31px;
+        left: 270px;
+        cursor: pointer; }
+    .header .wrapper .icons {
+      width: 41.66667%;
+      height: 71px;
+      padding-right: 17px; }
+      .header .wrapper .icons .iconsBell, .header .wrapper .icons .iconsLetter, .header .wrapper .icons .iconsSmallArrow {
+        width: 40px;
+        height: 40px;
+        background-color: #00aa00;
+        float: right;
+        margin: 16px 8px 10px 8px;
+        border-radius: 3px;
+        cursor: pointer; }
+        .header .wrapper .icons .iconsBell:active, .header .wrapper .icons .iconsLetter:active, .header .wrapper .icons .iconsSmallArrow:active {
+          background-color: #282b34; }
+      .header .wrapper .icons .iconsBell {
+        background: #484c57 url("../../build/img/bell.png") center no-repeat;
+        position: relative; }
+        .header .wrapper .icons .iconsBell .iconsBellMessage {
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          left: -3px;
+          top: -5px;
+          background-color: #deef22;
+          border-radius: 50%;
+          text-align: center;
+          font-size: 10pt;
+          font-family: exo_2bold;
+          vertical-align: middle;
+          display: inline-block; }
+      .header .wrapper .icons .iconsLetter {
+        background: #484c57 url("../../build/img/letter.png") center no-repeat; }
+      .header .wrapper .icons .iconsSmallArrow {
+        background: #484c57 url("../../build/img/down_arrow.png") center no-repeat; }
+    .header .wrapper .search {
+      margin: 16px 0 0 4px;
+      text-align: right;
+      padding: 0;
+      font-family: exo_2light; }
+      .header .wrapper .search input[type='text'] {
+        background-color: #282b34;
+        color: #e3e6ed;
+        border: none;
+        padding: 3px 14px;
+        font-size: 16pt;
+        letter-spacing: 0;
+        width: 386px;
+        height: 40px; }
+      .header .wrapper .search input[type='text']:focus {
+        color: #282b34;
+        background-color: #dadde4;
+        border: none; }
+      .header .wrapper .search input[type='text']:hover {
+        background-color: #1f2229;
+        color: #e3e6ed; }
+    .header .wrapper .search::after {
+      clear: both; }
+
+.top .wrapper {
+  width: 1220px;
+  height: 100%;
+  margin: 0 auto; }
+
+.topLeftPanel {
+  margin: 29px 0 0 -16px; }
+  .topLeftPanel .topLeftPanel-mainNews {
+    background-image: url("../../build/img/soldier-main.png");
+    background-position: -4px -22px;
+    width: 804px;
+    height: 371px; }
+  .topLeftPanel .topLeftPanel-textGroup {
+    margin: 283px 0 0 32px;
+    border-left: 2px solid #deef22;
+    display: inline-block;
+    width: 500px;
+    font-family: exo_2light, sans-serif;
+    color: white;
+    padding-left: 12px; }
+    .topLeftPanel .topLeftPanel-textGroup a {
+      font-size: 20pt;
+      letter-spacing: 1.09px;
+      color: white;
+      word-spacing: 1px; }
+    .topLeftPanel .topLeftPanel-textGroup .topLeftPanel-detail {
+      font-size: 11pt;
+      letter-spacing: 0.92px; }
+
+.topRightPanel {
+  margin: 29px 0 0 -79px;
+  font-family: exo_2light, sans-serif; }
+  .topRightPanel .topRightPanel-bestSoldier {
+    background-image: url("../../build/img/soldier-best.png");
+    background-position: 0 0;
+    width: 384px;
+    height: 271px; }
+    .topRightPanel .topRightPanel-bestSoldier a {
+      margin: 15px 10px 10px 14px;
+      font-family: exo_2light, sans-serif;
+      text-transform: uppercase;
+      display: inline-block;
+      color: white;
+      font-size: 13pt;
+      letter-spacing: 0.49px; }
+      .topRightPanel .topRightPanel-bestSoldier a .bestSoldier-title {
+        color: #deef22;
+        background: transparent;
+        border: none; }
+    .topRightPanel .topRightPanel-bestSoldier .bestSoldier-name {
+      color: #deef22;
+      margin: 169px 0 0 13px;
+      font-size: 11pt;
+      letter-spacing: 0.92px;
+      cursor: pointer; }
+      .topRightPanel .topRightPanel-bestSoldier .bestSoldier-name .bestSoldier-ico {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        background: url("../../build/img/helmet-yellow.png") 0 0; }
+    .topRightPanel .topRightPanel-bestSoldier .bestSoldier-city {
+      color: white;
+      margin: 0 0 0 13px;
+      font-size: 11pt;
+      letter-spacing: 1px; }
+  .topRightPanel .topRightPanel-soldierBlock {
+    font-size: 0;
+    /* убираем горизонтальные отступы */
+    line-height: 0;
+    /* ...и вертикальные в некоторых браузерах */
+    letter-spacing: -1px;
+    width: 384px; }
+    .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier1, .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier2, .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier3 {
+      display: inline-block;
+      width: 128px;
+      height: 100px;
+      background-color: #0000aa; }
+      .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier1:after, .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier2:after, .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier3:after {
+        clear: right; }
+    .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier1 {
+      background: url("../../build/img/soldier_1.png");
+      background-position: -6px -3px; }
+      .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier1 .soldier-ico {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin: 69px 0 0 14px;
+        background-image: url("../../build/img/helmet-yellow.png"); }
+      .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier1 .soldier-name1 {
+        font-size: 11pt;
+        letter-spacing: 1px;
+        margin: 0 0 0 5px;
+        color: #deef22;
+        cursor: pointer; }
+    .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier2 {
+      background: url("../../build/img/soldier_2.png");
+      background-position: -107px -3px; }
+      .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier2 .soldier-ico {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin: 69px 0 0 14px;
+        background-image: url("../../build/img/helmet-yellow.png"); }
+      .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier2 .soldier-name2 {
+        font-size: 11pt;
+        letter-spacing: 1px;
+        margin: 0 0 0 5px;
+        color: #deef22;
+        cursor: pointer; }
+    .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier3 {
+      background: url("../../build/img/soldier_3.png");
+      background-position: -424px -15px; }
+      .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier3 .soldier-ico {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin: 69px 0 0 14px;
+        background-image: url("../../build/img/helmet-yellow.png"); }
+      .topRightPanel .topRightPanel-soldierBlock .topRightPanel-soldier3 .soldier-name3 {
+        font-size: 11pt;
+        letter-spacing: 1px;
+        margin: 0 0 0 5px;
+        color: #deef22;
+        cursor: pointer; }
+
+.main .wrapper {
+  width: 1220px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.mainLeft {
+  height: 100%; }
+  .mainLeft .mainLeft-btn {
+    background-color: #363a46;
+    color: #deef22;
+    margin: 10px 0 0 -15px;
+    padding: 11px 0;
+    font-size: 15.5pt;
+    letter-spacing: -2.3px;
+    width: 282px;
+    text-transform: uppercase;
+    border: none;
+    font-family: exo_2light,sans-serif;
+    border-radius: 3px; }
+    .mainLeft .mainLeft-btn:hover {
+      background-color: #4c5162;
+      -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.68);
+      -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.68);
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.68);
+      width: 284px; }
+  .mainLeft .mainLeft-bestClub {
+    background-image: url(../../build/img/best_club-big.png);
+    width: 282px;
+    height: 283px;
+    margin: 28px 0 0 -15px;
+    background-position: -98px 0; }
+    .mainLeft .mainLeft-bestClub .mainLeft-title {
+      text-transform: uppercase;
+      font-size: 15pt;
+      letter-spacing: -0.5px;
+      color: white;
+      margin: 10px 0 0 15px;
+      display: inline-block;
+      font-family: exo_2light,sans-serif;
+      cursor: pointer; }
+      .mainLeft .mainLeft-bestClub .mainLeft-title .mainLeft-title--yellow {
+        color: #deef22; }
+    .mainLeft .mainLeft-bestClub .mainLeft-name {
+      font-family: exo_2bold,sans-serif;
+      margin: 187px 0 0 15px;
+      display: inline-block;
+      color: #deef22;
+      width: 150px;
+      font-size: 14pt;
+      letter-spacing: 0.8px; }
+    .mainLeft .mainLeft-bestClub .mainLeft-city {
+      color: white;
+      font-size: 12pt;
+      letter-spacing: -1px;
+      margin: 0 0 0 15px; }
+  .mainLeft .mainLeft-newsTitle {
+    margin: 20px 0 0 -15px;
+    width: 96%;
+    font-size: 19pt;
+    letter-spacing: 2px;
+    font-family: exo_2regular,sans-serif;
+    word-spacing: -1px; }
+    .mainLeft .mainLeft-newsTitle .newsTitle-top {
+      word-spacing: 0;
+      font-size: 19pt;
+      letter-spacing: 1px; }
+  .mainLeft .mainLeftPost-1, .mainLeft .mainLeftPost-2, .mainLeft .mainLeftPost-3 {
+    margin: -3px 10px 0 -15px;
+    border-top: 2px solid #d3d6dd; }
+    .mainLeft .mainLeftPost-1 img, .mainLeft .mainLeftPost-2 img, .mainLeft .mainLeftPost-3 img {
+      margin: -68px 0 0 -7px;
+      display: inline-block; }
+    .mainLeft .mainLeftPost-1 .mainLeftPost-block, .mainLeft .mainLeftPost-2 .mainLeftPost-block, .mainLeft .mainLeftPost-3 .mainLeftPost-block {
+      display: inline-block;
+      width: 145px; }
+      .mainLeft .mainLeftPost-1 .mainLeftPost-block .mainLeftPost-title, .mainLeft .mainLeftPost-2 .mainLeftPost-block .mainLeftPost-title, .mainLeft .mainLeftPost-3 .mainLeftPost-block .mainLeftPost-title {
+        font-family: exo_2bold, sans-serif;
+        font-size: 13pt;
+        letter-spacing: -1px;
+        font-weight: bold;
+        margin: 10px 0 0 4px;
+        display: inline-block;
+        cursor: pointer; }
+      .mainLeft .mainLeftPost-1 .mainLeftPost-block .mainLeftPost-members, .mainLeft .mainLeftPost-2 .mainLeftPost-block .mainLeftPost-members, .mainLeft .mainLeftPost-3 .mainLeftPost-block .mainLeftPost-members {
+        margin: 3px 0 0 6px;
+        background-color: #d1d4dc;
+        width: 100px;
+        display: inline-block;
+        padding-left: 3px; }
+      .mainLeft .mainLeftPost-1 .mainLeftPost-block .mainLeftPost-city, .mainLeft .mainLeftPost-2 .mainLeftPost-block .mainLeftPost-city, .mainLeft .mainLeftPost-3 .mainLeftPost-block .mainLeftPost-city {
+        font-size: 9pt;
+        letter-spacing: 0.5px;
+        margin: 4px 0 0 6px;
+        width: 100px;
+        display: inline-block;
+        color: #8d919a; }
+      .mainLeft .mainLeftPost-1 .mainLeftPost-block .mainLeftPost-data, .mainLeft .mainLeftPost-2 .mainLeftPost-block .mainLeftPost-data, .mainLeft .mainLeftPost-3 .mainLeftPost-block .mainLeftPost-data {
+        font-size: 9pt;
+        letter-spacing: 0.5px;
+        margin: 0 0 0 6px;
+        width: 100px;
+        display: inline-block;
+        color: #8d919a; }
+  .mainLeft .mainLeftPost-2 {
+    margin: 7px 10px 0 -15px; }
+  .mainLeft .mainLeftPost-3 {
+    margin: 7px 10px 0 -15px; }
+
+.mainCenter {
+  height: 400px; }
+  .mainCenter #slideshow {
+    margin: 9px 10px 0 -11px;
+    position: relative;
+    width: 104%;
+    height: 590px;
+    padding: 10px; }
+  .mainCenter #slideshow > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .mainCenter .box-news-3 .mainCenter-news, .mainCenter .box-news-1 .mainCenter-news, .mainCenter .box-news-2 .mainCenter-news {
+    font-size: 20pt;
+    letter-spacing: 1px;
+    margin: 7px 0 4px 5px;
+    font-family: exo_2regular, sans-serif; }
+  .mainCenter .box-news-3 .mainCenter-item, .mainCenter .box-news-1 .mainCenter-item, .mainCenter .box-news-2 .mainCenter-item {
+    border-top: 2px solid #d3d6dd;
+    border-bottom: 2px solid #d3d6dd; }
+    .mainCenter .box-news-3 .mainCenter-item a, .mainCenter .box-news-1 .mainCenter-item a, .mainCenter .box-news-2 .mainCenter-item a {
+      font-size: 20pt;
+      letter-spacing: 0.65px;
+      margin: 8px 0 0 2px;
+      font-family: exo_2bold, sans-serif;
+      font-weight: bold;
+      color: #545863;
+      display: inline-block; }
+    .mainCenter .box-news-3 .mainCenter-item .mainCenter-sign, .mainCenter .box-news-1 .mainCenter-item .mainCenter-sign, .mainCenter .box-news-2 .mainCenter-item .mainCenter-sign {
+      color: #8d919a;
+      font-size: 11pt;
+      letter-spacing: 0.65px;
+      margin: 2px 0 0 4px;
+      font-family: exo_2regular, sans-serif;
+      vertical-align: middle; }
+      .mainCenter .box-news-3 .mainCenter-item .mainCenter-sign .mainCenter-ico, .mainCenter .box-news-1 .mainCenter-item .mainCenter-sign .mainCenter-ico, .mainCenter .box-news-2 .mainCenter-item .mainCenter-sign .mainCenter-ico {
+        width: 15px;
+        height: 15px;
+        background-image: url("../../build/img/helmet-grey.png");
+        display: inline-block;
+        margin-right: 5px; }
+    .mainCenter .box-news-3 .mainCenter-item .mainCenter-img, .mainCenter .box-news-1 .mainCenter-item .mainCenter-img, .mainCenter .box-news-2 .mainCenter-item .mainCenter-img {
+      width: 493px;
+      height: 279px;
+      background-image: url(../../build/img/soldier_news.png);
+      background-position: -32px -11px;
+      margin: 14px 0 0 3px; }
+    .mainCenter .box-news-3 .mainCenter-item .mainCenter-text, .mainCenter .box-news-1 .mainCenter-item .mainCenter-text, .mainCenter .box-news-2 .mainCenter-item .mainCenter-text {
+      width: 493px;
+      height: 155px;
+      font-size: 12pt;
+      letter-spacing: 0px;
+      margin: 10px 0 10px 2px;
+      color: #545863;
+      overflow: hidden; }
+
+.mainRight .mainRight-title {
+  font-size: 19pt;
+  letter-spacing: 0.2px;
+  margin: 16px 0 0 6px;
+  color: #363a46; }
+
+.mainRight .mainRight-news {
+  border-top: 2px solid #d3d6dd;
+  margin: -4px 0 -10px  0;
+  width: 102.5%; }
+
+.mainRight .mainRightNews-ico {
+  width: 40px;
+  height: 40px;
+  margin: 14px 0 0 6px;
+  display: inline-block;
+  background-color: #363a46; }
+
+.mainRight .mainRightNews-text {
+  display: inline-block;
+  width: 80%;
+  margin: -57px 0 0 9px;
+  font-size: 10pt;
+  letter-spacing: 0px;
+  vertical-align: super; }
+
+.mainRight a {
+  font-size: 11pt;
+  letter-spacing: 0px;
+  background-color: transparent;
+  font-family: exo_2regular, sans-serif;
+  color: #0f0f0f;
+  vertical-align: middle;
+  display: inline-block;
+  margin: -71px 0 0 59px;
+  width: 79%;
+  line-height: 18px; }
+
+.mainRight .text--mark {
+  font-size: 10pt;
+  letter-spacing: -0.45px;
+  background-color: transparent;
+  font-weight: 900;
+  font-family: exo_2bold, sans-serif; }
+
+.footer {
+  background-color: #363a46;
+  width: 100%;
+  height: 100px;
+  margin: 52px 0 0 0; }
+  .footer .footer-sign {
+    font-size: 10pt;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 38px 0 0 0;
+    color: #dadde5;
+    font-size: 10.5pt;
+    display: inline-block;
+    width: 100%; }

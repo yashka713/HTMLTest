@@ -1,0 +1,14 @@
+.footer{
+background-color: #363a46;
+  @include widthHeight(100%, 100px);
+  margin: 52px 0 0 0;
+  .footer-sign{
+    @include fntSizeLtrSpacing(10pt, 0px);
+    text-align: center;
+    margin: 38px 0 0 0;
+    color: #dadde5;
+    font-size: 10.5pt;
+    display: inline-block;
+    width: 100%;
+  }
+}

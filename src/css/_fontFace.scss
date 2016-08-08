@@ -1,0 +1,32 @@
+/*Font*/
+@font-face {
+  font-family: 'exo_2black';
+  src: url('../../build/fonts/exo2-black-webfont.woff2') format('woff2'),
+  url('../../build/fonts/exo2-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo_2bold';
+  src: url('../../build/fonts/exo2-bold-webfont.woff2') format('woff2'),
+  url('../../build/fonts/exo2-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo_2light';
+  src: url('../../build/fonts/exo2-light-webfont.woff2') format('woff2'),
+  url('../../build/fonts/exo2-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo_2regular';
+  src: url('../../build/fonts/exo2-regular-webfont.woff2') format('woff2'),
+  url('../../build/fonts/exo2-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

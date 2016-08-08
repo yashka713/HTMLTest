@@ -1,0 +1,140 @@
+@mixin fntSizeLtrSpacing($fntSize, $ltrSpacing) {
+  font-size: $fntSize;
+  letter-spacing: $ltrSpacing;
+}
+
+.top .wrapper {
+  @include widthHeight(1220px, 100%);
+  margin: 0 auto;
+}
+
+.topLeftPanel {
+  margin: 29px 0 0 -16px;
+
+  .topLeftPanel-mainNews {
+    background-image: url("../../build/img/soldier-main.png");
+    background-position: -4px -22px;
+    @include widthHeight(804px, 371px);
+  }
+  .topLeftPanel-textGroup {
+    margin: 283px 0 0 32px;;
+    border-left: 2px solid #deef22;
+    display: inline-block;
+    width: 500px;
+    font-family: exo_2light, sans-serif;
+    color: white;
+    padding-left: 12px;
+    a {
+      @include fntSizeLtrSpacing(20pt, 1.09px);
+      color: white;
+      word-spacing: 1px;
+    }
+
+    .topLeftPanel-detail {
+      @include fntSizeLtrSpacing(11pt, 0.92px);
+    }
+
+  }
+}
+
+.topRightPanel {
+  margin: 29px 0 0 -79px;
+  font-family: exo_2light, sans-serif;
+  .topRightPanel-bestSoldier {
+    background-image: url("../../build/img/soldier-best.png");
+    background-position: 0 0;
+    @include widthHeight(384px, 271px);
+    a {
+      margin: 15px 10px 10px 14px;
+      font-family: exo_2light, sans-serif;
+      text-transform: uppercase;
+      display: inline-block;
+      color: white;
+      @include fntSizeLtrSpacing(13pt, 0.49px);
+      .bestSoldier-title {
+        color: #deef22;
+        background: transparent;
+        border: none;
+      }
+    }
+    .bestSoldier-name {
+      color: #deef22;
+      margin: 169px 0 0 13px;
+      @include fntSizeLtrSpacing(11pt, 0.92px);
+      cursor: pointer;
+      .bestSoldier-ico {
+        @include widthHeight(15px, 15px);
+        display: inline-block;
+        background: url("../../build/img/helmet-yellow.png") 0 0;
+      }
+    }
+    .bestSoldier-city {
+      color: white;
+      margin: 0 0 0 13px;
+      @include fntSizeLtrSpacing(11pt, 1px);
+    }
+  }
+  .topRightPanel-soldierBlock {
+    font-size:0; /* убираем горизонтальные отступы */
+    line-height:0; /* ...и вертикальные в некоторых браузерах */
+    letter-spacing:-1px;
+    width: 384px;
+    .topRightPanel-soldier1, .topRightPanel-soldier2, .topRightPanel-soldier3 {
+      display: inline-block;
+      @include widthHeight(128px, 100px);
+      background-color: #0000aa;
+      &:after {
+        clear: right;
+      }
+    }
+    .topRightPanel-soldier1{
+      background: url("../../build/img/soldier_1.png");
+      background-position: -6px -3px;
+      .soldier-ico{
+        @include widthHeight(15px,15px);
+        display: inline-block;
+        margin: 69px 0 0 14px;
+        background-image: url("../../build/img/helmet-yellow.png");
+      }
+      .soldier-name1{
+        @include fntSizeLtrSpacing(11pt, 1px);
+        margin: 0 0 0 5px;
+        color: #deef22;
+        cursor: pointer;
+      }
+    }
+    .topRightPanel-soldier2{
+      background: url("../../build/img/soldier_2.png");
+      background-position: -107px -3px;
+      .soldier-ico{
+        @include widthHeight(15px,15px);
+        display: inline-block;
+        margin: 69px 0 0 14px;
+        background-image: url("../../build/img/helmet-yellow.png");
+      }
+      .soldier-name2{
+        @include fntSizeLtrSpacing(11pt, 1px);
+        margin: 0 0 0 5px;
+        color: #deef22;
+        cursor: pointer;
+      }
+    }
+
+    .topRightPanel-soldier3{
+      background: url("../../build/img/soldier_3.png");
+      background-position: -424px -15px;
+      .soldier-ico{
+        @include widthHeight(15px,15px);
+        display: inline-block;
+        margin: 69px 0 0 14px;
+        background-image: url("../../build/img/helmet-yellow.png");
+      }
+      .soldier-name3{
+        @include fntSizeLtrSpacing(11pt, 1px);
+        margin: 0 0 0 5px;
+        color: #deef22;
+        cursor: pointer;
+      }
+  }
+  }
+}

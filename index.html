@@ -1,17 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
-    <title>test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Jquery -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="build/css/reset.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Main stylesheet-->
     <link rel="stylesheet" href="build/css/main.css">
+    <link rel="stylesheet" href="build/css/sss.css">
+    <title>test</title>
     <link rel="shortcut icon" href="icon.gif">
 </head>
 <body>
-<h1>Hello App</h1>
-<script src="build/js/"></script>
+<header class="header">
+    <div class="wrapper row">
+        <div class="logo col-md-4">
+            <img src="build/img/logo.png" alt="logo">
+            <span class="bigArrow"></span>
+        </div>
+        <div class="icons col-md-5">
+            <div class="iconsSmallArrow"></div>
+            <div class="iconsLetter"></div>
+            <div class="iconsBell">
+                <span class="iconsBellMessage">3</span>
+            </div>
+        </div>
+        <div class="search col-md-3">
+            <input type="text" placeholder="Поиск..." class="searchInput">
+        </div>
+    </div>
+</header>
+<div class="top">
+    <div class="wrapper row">
+        <div class="topLeftPanel col-md-9">
+            <div class="topLeftPanel-mainNews">
+                <aside class="topLeftPanel-textGroup">
+                    <a href="#fakeLink" class="topLeftPanel-title">Тестирование нового вооружения</a>
+                    <span class="topLeftPanel-detail">Полигон “Восточный”, Запорожская область</span>
+                </aside>
+            </div>
+        </div>
+        <div class="topRightPanel col-md-3">
+            <div class="topRightPanel-bestSoldier">
+                <a href="#fakeLink">
+                    <mark class="bestSoldier-title">Лучший</mark>
+                    участник</a>
 
+                <p class="bestSoldier-name">
+                    <span class="bestSoldier-ico"></span>
+                    Barateon89
+                </p>
+
+                <p class="bestSoldier-city">Запорожье</p>
+            </div>
+            <div class="topRightPanel-soldierBlock">
+                <div class="topRightPanel-soldier1">
+                    <span class="soldier-ico"></span>
+                    <span class="soldier-name1">Roy</span>
+                </div>
+                <div class="topRightPanel-soldier2">
+                    <span class="soldier-ico"></span>
+                    <span class="soldier-name2">Willson</span>
+                </div>
+                <div class="topRightPanel-soldier3">
+                    <span class="soldier-ico"></span>
+                    <span class="soldier-name3">Freddy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="main">
+    <div class="row wrapper">
+        <div class="mainLeft col-md-3">
+            <button class="mainLeft-btn">Сообщество</button>
+            <div class="mainLeft-bestClub">
+                <p class="mainLeft-title"><span class="mainLeft-title--yellow">Лучший</span> Клуб</p>
+                <a href="#fakelink" class="mainLeft-name">GunTeam</a>
+
+                <p class="mainLeft-city">Киев</p>
+            </div>
+            <div class="mainLeft-newsTitle">
+                <p><span class="newsTitle-top">ТОП</span> мероприятий:</p>
+            </div>
+            <div class="mainLeftPost-1">
+                <img src="build/img/news-ico.png" alt="news">
+                <div class="mainLeftPost-block">
+                    <span class="mainLeftPost-title">Собрание клуба</span>
+                    <span class="mainLeftPost-members">12 участников</span>
+                    <span class="mainLeftPost-city">Запорожье,</span>
+                    <span class="mainLeftPost-data">18 августа 2016</span>
+                </div>
+            </div>
+            <div class="mainLeftPost-2">
+                <img src="build/img/news-ico.png" alt="news">
+
+                <div class="mainLeftPost-block">
+                    <span class="mainLeftPost-title">Собрание клуба</span>
+                    <span class="mainLeftPost-members">12 участников</span>
+                    <span class="mainLeftPost-city">Запорожье,</span>
+                    <span class="mainLeftPost-data">18 августа 2016</span>
+                </div>
+            </div>
+            <div class="mainLeftPost-3">
+                <img src="build/img/news-ico.png" alt="news">
+
+                <div class="mainLeftPost-block">
+                    <span class="mainLeftPost-title">Собрание клуба</span>
+                    <span class="mainLeftPost-members">12 участников</span>
+                    <span class="mainLeftPost-city">Запорожье,</span>
+                    <span class="mainLeftPost-data">18 августа 2016</span>
+                </div>
+            </div>
+        </div>
+        <div class="mainCenter col-md-5">
+
+            <div id="slideshow">
+                <div class="box-news-1">
+                    <p class="mainCenter-news">Лента новостей:</p>
+                    <div class="mainCenter-item">
+                        <a href="#fakelink" class="mainCenter-title">Открытие нового клуба</a>
+                        <p class="mainCenter-sign"><span class="mainCenter-ico"></span>Barateon89, 18 мая 2016</p>
+                        <div class="mainCenter-img"></div>
+                        <p class="mainCenter-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                            quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                            qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                            dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
+                            ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </div>
+                <div class="box-news-2">
+                    <p class="mainCenter-news">Лента новостей:</p>
+                    <div class="mainCenter-item">
+                        <a href="#fakelink" class="mainCenter-title">Открытие нового клуба</a>
+                        <p class="mainCenter-sign"><span class="mainCenter-ico"></span>Barateon89, 18 мая 2016</p>
+                        <div class="mainCenter-img"></div>
+                        <p class="mainCenter-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                            quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                            qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                            dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
+                            ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </div>
+                <div class="box-news-3">
+                    <p class="mainCenter-news">Лента новостей:</p>
+                    <div class="mainCenter-item">
+                        <a href="#fakelink" class="mainCenter-title">Открытие нового клуба</a>
+                        <p class="mainCenter-sign"><span class="mainCenter-ico"></span>Barateon89, 18 мая 2016</p>
+                        <div class="mainCenter-img"></div>
+                        <p class="mainCenter-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                            quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                            qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                            dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
+                            ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainRight col-md-4">
+            <div class="mainRight-title">
+                <p class="mainRight-titleStyle">Активность:</p>
+            </div>
+            <div class="mainRight-news">
+                <div class="mainRightNews-ico"></div>
+                <a href="#fakelink">Участник <span class="text--mark">Mark66</span> создал мероприятие <span
+                        class="text--mark">“Новое вооружение”</span></a>
+            </div>
+            <div class="mainRight-news">
+                <div class="mainRightNews-ico"></div>
+                <a href="#fakelink">В группе <span class="text--mark">“Тестовые образцы”</span> добавленно 8 новых
+                    комментариев</a>
+            </div>
+            <div class="mainRight-news">
+                <div class="mainRightNews-ico"></div>
+                <a href="#fakelink">Участник <span class="text--mark">Mark66</span> создал мероприятие <span
+                        class="text--mark">“Новое вооружение”</span></a>
+            </div>
+            <div class="mainRight-news">
+                <div class="mainRightNews-ico"></div>
+                <a href="#fakelink">В группе <span class="text--mark">“Тестовые образцы”</span> добавленно 8 новых
+                    комментариев</a>
+            </div>
+            <div class="mainRight-news">
+                <div class="mainRightNews-ico"></div>
+                <a href="#fakelink">Участник <span class="text--mark">Mark66</span> создал мероприятие <span
+                        class="text--mark">“Новое вооружение”</span></a>
+            </div>
+            <div class="mainRight-news">
+                <div class="mainRightNews-ico"></div>
+                <a href="#fakelink">В группе <span class="text--mark">“Тестовые образцы”</span> добавленно 8 новых
+                    комментариев</a>
+            </div>
+            <div class="mainRight-news">
+                <div class="mainRightNews-ico"></div>
+                <a href="#fakelink">Участник <span class="text--mark">Mark66</span> создал мероприятие <span
+                        class="text--mark">“Новое вооружение”</span></a>
+            </div>
+            <div class="mainRight-news">
+                <div class="mainRightNews-ico"></div>
+                <a href="#fakelink">В группе <span class="text--mark">“Тестовые образцы”</span> добавленно 8 новых
+                    комментариев</a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+<p class="footer-sign">©2016 Weapon.club, Inc. All rights reserved.</p>
+</footer>
+<!-- Main script -->
+<script src="build/js/production.js"></script>
+<script src="build/js/sss.min.js"></script>
 </body>
 </html>
